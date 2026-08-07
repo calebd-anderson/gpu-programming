@@ -1,7 +1,6 @@
 # GPU Programming
-https://learning.oreilly.com/library/view/gpu-programming-with/9781805124542/
-
-https://github.com/PacktPublishing/GPU-Programming-with-CPP-and-CUDA
+- https://learning.oreilly.com/library/view/gpu-programming-with/9781805124542/
+- https://github.com/PacktPublishing/GPU-Programming-with-CPP-and-CUDA
 
 ## CUDA Setup
 ### Driver
@@ -53,4 +52,12 @@ vim ~/.zshrc
 # manual uninstall cuda
 sudo apt-get --purge remove "*cuda*" "*cublas*" "*cufft*" "*cufile*" "*curand*" \
  "*cusolver*" "*cusparse*" "*gds-tools*" "*npp*" "*nvjpeg*" "nsight*" "*nvvm*"
+ ```
+
+ ## Compile
+ ```sh
+ # manually compile
+ nvcc -o bin/primes primes.cu
+ # run
+ ./bin/primes
  ```
